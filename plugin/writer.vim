@@ -13,7 +13,7 @@ let g:writer_on = 0
 let s:save_cpo = &cpo
 set cpo&vim
 
-let s:font = &guifont
+let s:font = escape(&guifont, " ")
 let s:numbers = &number
 let s:relative = &relativenumber
 let s:spacing = &linespace
